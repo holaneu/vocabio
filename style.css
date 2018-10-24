@@ -1,0 +1,55 @@
+body, html {font-family: Arial; margin: 0; padding:0; color: silver; background-color: #272727;}
+
+h1 {margin:0 0 8px 0; font-size: 20px;}
+h1::first-letter {text-transform: uppercase;}
+p {margin: 2px 0 2px 0;}
+button {padding: 5px 12px; margin: 0 5px 7px 0; font-size: 16px; background-color: transparent; border-radius: 8px; border: 1px solid #3ebb70; color: #3ebb70; cursor: pointer;}
+button:hover {background-color: #3ebb70; color: black;}
+
+/* HEADER */
+#header {padding: 8px; background-color: #212121; }
+header {padding: 8px; background-color: #212121; }
+
+/* CONTENT */
+#content {padding: 10px 8px 10px 8px;}
+#content p a {background: #ececec; padding: 5px 12px; text-decoration: none; margin-bottom: 3px;}
+#content ul {list-style:none; padding-left: 0; margin:0;}
+#content ul li { margin-bottom: 5px; padding: 6px 0px; color: #8a8a8a;}
+#content ul li a {background: #3c3c3c; padding: 6px 12px; text-decoration: none; color: silver; border-radius: 5px; margin-right: 5px;}
+#content ul li a:hover {background: #696969; text-decoration: none; color: silver;}
+#content ul li a:active {color: silver;}
+
+#related {padding: 0 0 0 6px;}
+#related ul {margin: 0; list-style-type: none; padding-left: 10px;}
+#related ul li {padding: 3px 3px;}
+
+.logo {color: #3ebb70; font-weight: bold; font-size: 50px; font-family: Arial; margin-bottom: -5px;}
+
+/* BOTTOM NAVIGATION */
+#bottom_nav {padding: 10px 8px 10px 8px;}
+
+/* FORMS */
+input[type="text"]::-webkit-input-placeholder {color: silver;}
+input[type="text"]::-moz-placeholder {color: silver;}
+input[type="text"]::-ms-input-placeholder {color: silver;}
+input[type="text"]::-moz-placeholder {color: silver;}
+
+input[type="search"]::-webkit-input-placeholder {color: silver;}
+input[type="search"]::-moz-placeholder {color: silver;}
+input[type="search"]::-ms-input-placeholder {color: silver;}
+input[type="search"]::-moz-placeholder {color: silver;}
+
+#addForm input[type="text"] {margin-bottom: 8px; padding: 5px 12px; text-transform: lowercase; border: 0; border-radius: 5px; background-color: #6b6b6b; height: 32px; font-size: 15px; color: silver; width: 96%; max-width: 800px;}
+#addForm input[type="submit"] {padding: 7px 14px; margin: 5px 5px 7px 0; font-size: 16px; background-color: #3ebb70; border-radius: 5px; border: 0; color: black; cursor: pointer;}
+#addForm input[type="submit"]:hover {background: #5fec97;}
+
+#searchForm {display: inline-block; position:relative;}
+#searchForm input[type="search"] {padding: 4px 10px; text-transform: lowercase; border-radius: 5px 0px 0px 5px; border: 1px solid #6b6b6b; background-color: #6b6b6b; height: 32px; font-size: 15px; margin-right: 0; color: silver}
+#searchForm input[type="reset"] {position: absolute; top:4px; right:39px; background: gray; border:1px solid gray; font-size: 15px; overflow:hidden; height:25px; width: 25px; color: silver; border-radius:50%; cursor: pointer;}
+#searchForm input[type="submit"] {margin-left: -6px; border: 1px solid #6b6b6b; height: 32px; border-radius: 0px 5px  5px 0px; background-color: #6b6b6b; color: silver; font-size: 15px; overflow:hidden; padding-left: 10px; padding-right: 11px; cursor: pointer;}
+
+#debug_info {padding: 10px 8px 10px 8px; color: gray; font-size: 14px;}
+
+@media (max-width: 450px) {
+  #searchForm {display: block;}
+}
